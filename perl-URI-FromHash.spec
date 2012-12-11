@@ -56,3 +56,14 @@ rm -rf %buildroot
 %perl_vendorlib/*
 
 
+
+
+%changelog
+* Sat Apr 23 2011 Funda Wang <fwang@mandriva.org> 0.30.0-2mdv2011.0
++ Revision: 656833
+- rebuild for updated spec-helper
+
+* Tue Aug 24 2010 Jérôme Quelin <jquelin@mandriva.org> 0.30.0-1mdv2011.0
++ Revision: 572867
+- import perl-URI-FromHash
+

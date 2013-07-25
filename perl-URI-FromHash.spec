@@ -1,15 +1,15 @@
 %define upstream_name    URI-FromHash
-%define upstream_version 0.03
+%define upstream_version 0.04
 
 Name:       perl-%{upstream_name}
-Version:    %perl_convert_version %{upstream_version}
-Release:    %mkrel 2
+Version:    %perl_convert_version 0.04
+Release:    1
 
 Summary:    Build a URI from a set of named parameters
 License:    GPL+ or Artistic
 Group:      Development/Perl
 Url:        http://search.cpan.org/dist/%{upstream_name}
-Source0:    http://www.cpan.org/modules/by-module/URI/%{upstream_name}-%{upstream_version}.tar.gz
+Source0:    http://www.cpan.org/modules/by-module/URI/URI-FromHash-0.04.tar.gz
 
 BuildRequires: perl(Params::Validate)
 BuildRequires: perl(Test::More)
@@ -66,4 +66,5 @@ rm -rf %buildroot
 * Tue Aug 24 2010 Jérôme Quelin <jquelin@mandriva.org> 0.30.0-1mdv2011.0
 + Revision: 572867
 - import perl-URI-FromHash
+
 

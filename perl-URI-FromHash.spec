@@ -10,7 +10,7 @@ Release:    3
 Summary:    Build a URI from a set of named parameters
 License:    GPL+ or Artistic
 Group:      Development/Perl
-Url:        http://search.cpan.org/dist/%{upstream_name}
+Url:        https://search.cpan.org/dist/%{upstream_name}
 Source0:    http://www.cpan.org/modules/by-module/URI/URI-FromHash-%{upstream_version}.tar.gz
 
 BuildRequires: perl(Params::Validate)

@@ -13,6 +13,7 @@ Group:      Development/Perl
 Url:        https://search.cpan.org/dist/%{upstream_name}
 Source0:    http://www.cpan.org/modules/by-module/URI/URI-FromHash-%{upstream_version}.tar.gz
 
+BuildRequires:	make
 BuildRequires: perl(Params::Validate)
 BuildRequires: perl(Test::More)
 BuildRequires: perl(URI)

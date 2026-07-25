@@ -1,17 +1,17 @@
 %define upstream_name    URI-FromHash
-%define upstream_version 0.04
+%define upstream_version 0.05
 
 %define debug_package %{nil}
 
 Name:       perl-%{upstream_name}
-Version:    %perl_convert_version %{upstream_version}
-Release:    3
+Version:    %{upstream_version}
+Release:    1
 
 Summary:    Build a URI from a set of named parameters
 License:    GPL+ or Artistic
 Group:      Development/Perl
-Url:        https://search.cpan.org/dist/%{upstream_name}
-Source0:    http://www.cpan.org/modules/by-module/URI/URI-FromHash-%{upstream_version}.tar.gz
+Url:        https://github.com/autarch/URI-FromHash
+Source0:    https://cpan.metacpan.org/authors/id/D/DR/DROLSKY/URI-FromHash-%{upstream_version}.tar.gz
 
 BuildRequires:	make
 BuildRequires: perl(Params::Validate)

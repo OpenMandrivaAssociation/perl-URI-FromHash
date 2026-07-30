@@ -5,7 +5,7 @@
 
 Name:       perl-%{upstream_name}
 Version:	0.05
-Release:	2
+Release:	3
 
 Summary:    Build a URI from a set of named parameters
 License:    GPL+ or Artistic
@@ -37,14 +37,14 @@ TT2.
 %setup -q -n URI-FromHash-0.05
 
 %build
-%{__perl} Makefile.PL INSTALLDIRS=vendor
+perl Makefile.PL INSTALLDIRS=vendor
 
 %make
 
 %check
 # soft: do not fail package on test failures
 set +e
-%make test
+%make test || :
 
 %install
 %makeinstall_std

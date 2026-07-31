@@ -5,7 +5,7 @@
 
 Name:       perl-%{upstream_name}
 Version:	0.05
-Release:	13
+Release:	1
 
 Summary:    Build a URI from a set of named parameters
 License:    GPL+ or Artistic
@@ -14,6 +14,7 @@ Url:        https://github.com/autarch/URI-FromHash
 Source0:	https://cpan.metacpan.org/authors/id/D/DR/DROLSKY/URI-FromHash-0.05.tar.gz
 
 BuildRequires:	make
+BuildRequires:	perl(Test::Fatal)
 BuildRequires: perl(Params::Validate)
 BuildRequires: perl(Test::More)
 BuildRequires: perl(URI)
@@ -39,18 +40,18 @@ TT2.
 %build
 perl Makefile.PL INSTALLDIRS=vendor
 
-%make
-
+%make_build
 %check
 # soft: do not fail package on test failures
 set +e
+make test || :
 %make test || :
 
 %install
 %makeinstall_std
 
 %files
-%doc META.yml Changes README LICENSE
+%doc Changes INSTALL LICENSE META.yml README.md
 %{_mandir}/man3/*
 %perl_vendorlib/*
 

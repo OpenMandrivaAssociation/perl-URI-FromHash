@@ -5,7 +5,7 @@
 
 Name:       perl-%{upstream_name}
 Version:	0.05
-Release:	6
+Release:	7
 
 Summary:    Build a URI from a set of named parameters
 License:    GPL+ or Artistic
